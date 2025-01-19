@@ -3,159 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloombyti Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            cursor: pointer;
-        }
-        nav ul li:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            height: 100vh;
-            background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            margin: 10px 0;
-        }
-        .hero button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 5px;
-        }
-        .hero button:hover {
-            background-color: #0056b3;
-        }
-        .services, .contact {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .services h2, .contact h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .services .service {
-            display: inline-block;
-            margin: 15px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .services .service:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .contact form input, .contact form textarea, .contact form button {
-            padding: 10px;
-            font-size: 1rem;
-        }
-        .contact form button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .contact form button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>OllyOlly Inspired Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bloombyti</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1>Bloombyti</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <h1>Welcome to Bloombyti</h1>
-        <p>Building modern, interactive, and responsive websites.</p>
-        <button id="cta-button">Explore More</button>
+        <div class="hero-content">
+            <h2>We Build Better Digital Experiences</h2>
+            <p>Your journey to digital success starts here.</p>
+            <a href="services.html" class="cta-button">Explore Services</a>
+        </div>
     </section>
 
-    <section class="services">
-        <h2>Services</h2>
-        <div class="service" id="service1">Web Development</div>
-        <div class="service" id="service2">Digital Marketing</div>
-        <div class="service" id="service3">Content Creation</div>
+    <section class="services-overview">
+        <h2>Our Expertise</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Creating responsive and user-friendly websites.</p>
+            </div>
+            <div class="service-item">
+                <h3>Digital Marketing</h3>
+                <p>Driving growth with innovative marketing strategies.</p>
+            </div>
+            <div class="service-item">
+                <h3>Brand Strategy</h3>
+                <p>Building brands that stand out and thrive.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section class="cta">
+        <h2>Let’s Work Together</h2>
+        <p>Contact us today and let's turn your ideas into reality!</p>
+        <a href="contact.html" class="cta-button">Get in Touch</a>
     </section>
 
-    <script>
-        // Hero Button Interaction
-        document.getElementById('cta-button').addEventListener('click', function() {
-            alert('Thank you for exploring!');
-        });
-
-        // Contact Form Submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Your message has been sent successfully!');
-        });
-    </script>
+    <footer>
+        <p>&copy; 2025 Bloombyti. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
